@@ -17,7 +17,7 @@ st.write("Bem-vindo ao sistema!")
 cursor.execute("SELECT nome, email FROM cliente")
 dados = cursor.fetchall()
 
-for name, email in dados:
+for nome, email in dados:
     st.write(f"{nome} - {email}")
 
 nome = st.text_input("Nome")
