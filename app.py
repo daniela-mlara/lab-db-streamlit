@@ -14,7 +14,7 @@ cursor = conn.cursor()
 st.title("Sistema de Cadastro")
 st.write("Bem-vindo ao sistema!")
 
-cursor.execute("SELECT nome, email FRO, cliente")
+cursor.execute("SELECT nome, email FROM cliente")
 dados = cursor.fetchall()
 
 for name, email in dados:
